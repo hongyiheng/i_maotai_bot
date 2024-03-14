@@ -1,4 +1,4 @@
-name: i_maotai-bot
+name: i_maotai_bot
 
 on:
   schedule:
@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  checkin:
+  appointment:
     runs-on: ubuntu-latest
     steps:
-      - uses: hongyiheng/i_maotai-bot@v1.0
+      - uses: hongyiheng/i_maotai_bot@v1.0
         with:
           user: ${{ secrets.USER }}
           item_ids: ${{ secrets.ITEM_IDS }}
