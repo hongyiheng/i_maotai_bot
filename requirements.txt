@@ -1,7 +1,5 @@
-base64
-hashlib
-json
-datetime
 requests
+cffi
+pyopenssl
 cryptography
 actions_toolkit

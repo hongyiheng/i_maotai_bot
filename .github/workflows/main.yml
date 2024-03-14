@@ -17,3 +17,14 @@ jobs:
           aes_key: ${{ secrets.AES_KEY }}
           aes_iv: ${{ secrets.AES_IV }}
           salt: ${{ secrets.SALT }}
+      - uses: hongyiheng/i_maotai_bot@v1.0
+        with:
+          user: ${{ secrets.USER_SECOND }}
+          item_ids: ${{ secrets.ITEM_IDS }}
+          shop_id: ${{ secrets.SHOP_ID }}
+          aes_key: ${{ secrets.AES_KEY }}
+          aes_iv: ${{ secrets.AES_IV }}
+          salt: ${{ secrets.SALT }}
+
+
+
