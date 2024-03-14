@@ -1,0 +1,31 @@
+name: imaotai-bot
+description: 'GitHub Action for imaotai bot'
+author: 'hyh'
+branding:
+  icon: 'check-circle'
+  color: 'gray-dark'
+inputs:
+  user:
+    description: 'user'
+    required: true
+  item_ids:
+    description: 'item_ids'
+    required: true
+  shop_id:
+    description: 'shop_id'
+    required: true
+  aes_key:
+    description: 'aes_key'
+    required: true
+  aes_iv:
+    description: 'aes_iv'
+    required: true
+  salt:
+    description: 'salt'
+    required: true
+outputs:
+  result:
+    description: 'The result of api'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
