@@ -1,0 +1,19 @@
+name: i_maotai-bot
+
+on:
+  schedule:
+    - cron: '*/30 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hongyiheng/i_maotai-bot@v1.0
+        with:
+          user: ${{ secrets.USER }}
+          item_ids: ${{ secrets.ITEM_IDS }}
+          shop_id: ${{ secrets.SHOP_ID }}
+          aes_key: ${{ secrets.AES_KEY }}
+          aes_iv: ${{ secrets.AES_IV }}
+          salt: ${{ secrets.SALT }}

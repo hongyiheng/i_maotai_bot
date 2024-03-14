@@ -1,27 +1,24 @@
 name: imaotai-bot
 description: 'GitHub Action for imaotai bot'
 author: 'hyh'
-branding:
-  icon: 'check-circle'
-  color: 'gray-dark'
 inputs:
   user:
-    description: 'user'
+    description: 'USER'
     required: true
   item_ids:
-    description: 'item_ids'
+    description: 'ITEM_IDS'
     required: true
   shop_id:
-    description: 'shop_id'
+    description: 'SHOP_ID'
     required: true
   aes_key:
-    description: 'aes_key'
+    description: 'AES_KEY'
     required: true
   aes_iv:
-    description: 'aes_iv'
+    description: 'AES_IV'
     required: true
   salt:
-    description: 'salt'
+    description: 'SALT'
     required: true
 outputs:
   result:
