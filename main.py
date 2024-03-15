@@ -72,7 +72,7 @@ class MaoTai:
         }
 
         rep = requests.post(url, headers=headers, data=json.dumps(data))
-        print(rep.json()['message'])
+        print(rep.json())
 
 
 if __name__ == '__main__':
